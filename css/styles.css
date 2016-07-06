@@ -83,7 +83,7 @@ body {
 #content {
 	background-color: #f2f2f2;
 	/*border-top-left-radius: 8em;*/
-	padding-top: 2em;
+	/*padding-top: 1em*/;
 	padding-left: 4em;
 }
 
@@ -94,16 +94,11 @@ h3 {
 
 #content .post-image {
 	width:100%;
-	margin:top 2em;
 }
 
 .post {
 	margin-bottom: 2em;
 	color:black;
-}
-
-.post-image {
-	float: left;
 }
 
 .post:hover {
@@ -117,10 +112,27 @@ hr {
 
 /*----------Media Queries-----------------*/
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	#clear-html, #css-background {
 		display:none;
 		position:static;
 	}
 
+	.con-text {
+		margin-top: 1em;
+	}
+
+	#content {
+		padding-left: 2em;
+	}
+
+	.title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 530px) {
+	h1 {
+		font-size: 6vw;
+	}
 }
